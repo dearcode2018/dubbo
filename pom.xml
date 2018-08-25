@@ -11,11 +11,16 @@
 	<modules>
 		<!-- 模板 -->
 		<module>dubbo-core</module>		
-		<module>dubbo-template</module>		
+		<module>dubbo-template</module>
+		<module>dubbo-admin</module>		
+		<module>dubbo-config</module>		
+		<module>dubbo-consumer</module>		
+		<module>dubbo-extend</module>		
+		<module>dubbo-monitor</module>		
+		<module>dubbo-provider</module>					
+		<module>dubbo-registry</module>		
+		<module>dubbo-service-api</module>		
 		<!--
-		<module></module>		
-		<module></module>		
-		<module></module>		
 		<module></module>		
 		<module></module>	
 		-->
@@ -33,6 +38,60 @@
 		<maven.plugin.resources.version>2.7</maven.plugin.resources.version>
 		<maven.plugin.dependency.version>2.10</maven.plugin.dependency.version>
 		<maven.plugin.war.version>3.0</maven.plugin.war.version>
+		
+        <javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
+		<servlet-api.version>2.5</servlet-api.version>
+		<javax.ws.rs.version>2.0.1</javax.ws.rs.version>
+        <jetcache.version>2.4.4</jetcache.version>		
+		<spring.version>5.0.7.RELEASE</spring.version>
+        <spring-data-redis.version>2.0.9.RELEASE</spring-data-redis.version>   
+        <jedis.version>2.9.0</jedis.version>
+        
+        <dubbo.version>2.6.2</dubbo.version>
+        <zookeeper.version>3.5.2-alpha</zookeeper.version>        
+        <zkclient.version>0.1</zkclient.version>       
+        
+        <aspectjrt.version>1.8.5</aspectjrt.version>
+        <aspectjlib.version>1.6.2</aspectjlib.version>
+        <aspectjweaver.version>1.8.5</aspectjweaver.version>
+        <cglib-nodep.version>3.1</cglib-nodep.version>
+        <dom4j.version>1.6.1</dom4j.version>
+        <fastjson.version>1.2.32</fastjson.version>
+        <freemarker.version>2.3.22</freemarker.version>
+        <log4j.version>1.2.16</log4j.version>
+        <net.glxn.version>1.4</net.glxn.version>
+        <guava.version>18.0</guava.version>
+        <lombok.version>1.16.18</lombok.version>
+        <jackson.version>2.9.0.pr3</jackson.version>
+        <jersey2.version>2.23.1</jersey2.version>
+        <json-lib.version>2.4</json-lib.version>
+        <jsoup.version>1.8.1</jsoup.version>
+        <junit.version>4.12</junit.version>
+        <commonbeanutils.version>1.8.3</commonbeanutils.version>
+        <commons.collections.version>3.2.1</commons.collections.version>
+        <commons-lang.version>2.6</commons-lang.version>
+        <commons.lang3.version>3.3.2</commons.lang3.version>
+        <commons-net.version>1.4.1</commons-net.version>
+        <commons-codec.version>1.10</commons-codec.version>
+        <commons-fileupload.version>1.3.1</commons-fileupload.version>
+        <httpcomponent.version>4.4.1</httpcomponent.version>
+        <httpasyncclient.version>4.1</httpasyncclient.version>
+        <httpclient.version>3.1</httpclient.version>
+        <xmlbeans.version>2.6.0</xmlbeans.version>
+        <org.json.version>20140107</org.json.version>
+        <protostuff.version>1.2.0</protostuff.version>
+        <slf4j.version>1.7.25</slf4j.version>
+        <slf4j-api.version>1.7.25</slf4j-api.version>
+        <xstream.version>1.4.8</xstream.version>
+        <joda.version>2.9.9</joda.version>
+        <guava.version>22.0</guava.version>
+        <logback.version>1.2.3</logback.version>
+        <jetcache.version>2.4.4</jetcache.version>
+        <jacksonJaxrs.version>1.9.12</jacksonJaxrs.version>        
+        <curator.version>4.0.1</curator.version>
+ 		<validation-api.version>2.0.1.Final</validation-api.version>
+		<hibernate-validator.version>6.0.12.Final</hibernate-validator.version>       		
+		
 	</properties>  
   
   
