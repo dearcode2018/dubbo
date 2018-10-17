@@ -19,6 +19,9 @@ import com.hua.bean.ResultBean;
 public class SpeakServiceImpl implements SpeakService
 {
 
+	
+	private String value;
+	
 	/**
 	 * @description 
 	 * @param content
