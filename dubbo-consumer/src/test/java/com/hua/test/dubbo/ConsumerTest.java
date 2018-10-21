@@ -49,8 +49,8 @@ import com.hua.util.JacksonUtil;
 @RunWith(SpringJUnit4ClassRunner.class)
 //@ContextConfiguration(locations = {"classpath:conf/xml/applicationContext.xml"})
 @ContextConfiguration(locations = {
-		"classpath:META-INF/spring/spring-config.xml", 
-		"classpath:META-INF/spring/consumer.xml"
+		"classpath:conf/xml/spring-config.xml", 
+		"classpath:conf/xml/consumer.xml"
 		})
 public final class ConsumerTest extends BaseTest {
 
@@ -75,7 +75,7 @@ public final class ConsumerTest extends BaseTest {
 	@Test
 	public void testSay() {
 		try {
-			ResultBean resultBean = speakService.say("你好，dubbo!");
+			ResultBean resultBean = speakService.say("你好222，dubbo!");
 			
 			System.out.println(JacksonUtil.writeAsString(resultBean));
 			

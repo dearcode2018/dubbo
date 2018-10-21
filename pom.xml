@@ -18,8 +18,11 @@
 		<module>dubbo-extend</module>		
 		<module>dubbo-monitor</module>		
 		<module>dubbo-provider</module>					
+		<module>dubbo-provider-speak</module>
+		<module>dubbo-provider-walk</module>
 		<module>dubbo-registry</module>		
 		<module>dubbo-service-api</module>		
+		<module>dubbo-test</module>
 		<!--
 		<module></module>		
 		<module></module>	

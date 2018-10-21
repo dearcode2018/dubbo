@@ -25,4 +25,13 @@ public interface SpeakService
 	 */
 	public ResultBean say(final String content);
 	
+	/**
+	 * 
+	 * @description 
+	 * @param content
+	 * @return
+	 * @author qianye.zheng
+	 */
+	public ResultBean sayWithTalk(final String content);
+	
 }
