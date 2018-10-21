@@ -53,9 +53,8 @@ import com.hua.util.JacksonUtil;
 		"classpath:META-INF/spring/provider.xml"
 		, "classpath:META-INF/spring/dubbo-service.xml"
 })*/
-/*@ContextConfiguration(locations = {"classpath:META-INF/spring/spring-config.xml",
-		"classpath:META-INF/spring/provider.xml"
-})*/
+@ContextConfiguration(locations = {"classpath:META-INF/spring/spring-config.xml"
+})
 public final class LocalServiceCallExternalSerivce extends BaseTest {
 
 	
@@ -75,43 +74,6 @@ public final class LocalServiceCallExternalSerivce extends BaseTest {
 	
 	@Resource
 	private WalkService walkService;
-	
-	
-	/**
-	 * 
-	 * 描述: 
-	 * @author qye.zheng
-	 * 
-	 */
-	@Test
-	public void testInvokeLocalService() {
-		try {
-			ResultBean resultBean = speakService.say("你好吗，哈哈啊");
-			
-			System.out.println(JacksonUtil.writeAsString(resultBean));
-			
-		} catch (Exception e) {
-			log.error("testInvokeLocalService =====> ", e);
-		}
-	}
-	
-	/**
-	 * 
-	 * 描述: 
-	 * @author qye.zheng
-	 * 
-	 */
-	@Test
-	public void testInvokeExternalService() {
-		try {
-			ResultBean resultBean = walkService.walk("xxxxx");
-			
-			System.out.println(JacksonUtil.writeAsString(resultBean));
-			
-		} catch (Exception e) {
-			log.error("testInvokeLocalService =====> ", e);
-		}
-	}
 	
 	/**
 	 * 

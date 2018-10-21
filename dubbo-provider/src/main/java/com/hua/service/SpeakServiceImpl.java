@@ -54,4 +54,16 @@ public class SpeakServiceImpl implements SpeakService
 		return null;
 	}
 
+	/**
+	 * @description 
+	 * @param content
+	 * @return
+	 * @author qianye.zheng
+	 */
+	@Override
+	public ResultBean sayAndWalk(String content)
+	{
+		return null;
+	}
+
 }

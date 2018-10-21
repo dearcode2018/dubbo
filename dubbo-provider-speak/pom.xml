@@ -186,7 +186,7 @@
 			<artifactId>dubbo-service-api</artifactId>
 			<version>${dubbo.core.version}</version>
 		</dependency>		
-		
+	
 	</dependencies>
 
 </project>

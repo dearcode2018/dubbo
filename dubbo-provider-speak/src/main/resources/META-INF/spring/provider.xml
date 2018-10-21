@@ -20,7 +20,7 @@
 
   <!-- 使用dubbo发布服务 -->
   <!-- 提供方应用信息，用于计算依赖关系 -->
-  <dubbo:application name="dubbo-provider"/>
+  <dubbo:application name="dubbo-provider-speak"/>
 
   <!-- 用dubbo协议在20880端口暴露服务
   	指定host避免在多个网卡情况下，随机绑定网卡导致ip不明确

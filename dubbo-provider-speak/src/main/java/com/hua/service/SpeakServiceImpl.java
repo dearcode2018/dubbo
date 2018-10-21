@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.hua.bean.ResultBean;
+import com.hua.util.JacksonUtil;
 
  /**
  * @type SpeakServiceImpl
@@ -27,6 +28,9 @@ public class SpeakServiceImpl implements SpeakService
 	
 	@Resource
 	private TalkService talkService;
+	
+	@Resource
+	private WalkService walkService;
 	
 	/**
 	 * @description 
@@ -55,7 +59,8 @@ public class SpeakServiceImpl implements SpeakService
 	@Override
 	public ResultBean sayWithTalk(String content)
 	{
-		talkService.talk("sayWithTalk");
+		ResultBean resultBean0 = talkService.talk("sayWithTalk");
+		System.out.println(JacksonUtil.writeAsString(resultBean0));
 		ResultBean resultBean = new ResultBean();
 		resultBean.setId("20180825");
 		resultBean.setMessage(value + "Say: " + content);
@@ -65,4 +70,24 @@ public class SpeakServiceImpl implements SpeakService
 		return resultBean;
 	}
 
+	/**
+	 * @description 
+	 * @param content
+	 * @return
+	 * @author qianye.zheng
+	 */
+	@Override
+	public ResultBean sayAndWalk(String content)
+	{
+		ResultBean resultBean0 = walkService.walk("sayAndWalk");
+		System.out.println(JacksonUtil.writeAsString(resultBean0));
+		ResultBean resultBean = new ResultBean();
+		resultBean.setId("20180825");
+		resultBean.setMessage(value + "Say: " + content);
+		resultBean.setSuccess(true);
+		resultBean.setMessageCode("200");
+		
+		return resultBean;
+	}
+	
 }

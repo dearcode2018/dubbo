@@ -23,6 +23,6 @@ public interface WalkService
 	 * @return
 	 * @author qianye.zheng
 	 */
-	public ResultBean talk(final String content);
+	public ResultBean walk(final String content);
 	
 }

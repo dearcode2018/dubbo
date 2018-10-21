@@ -128,12 +128,20 @@
 			<artifactId>dubbo-service-api</artifactId>
 			<version>${dubbo.core.version}</version>
 		</dependency>
-
+		
+		<!-- 加入所有需要测试的实现项目 (排除所有dubbo接口声明和引用) -->
 		<dependency>
 			<groupId>com.hua</groupId>
-			<artifactId>dubbo-provider</artifactId>
+			<artifactId>dubbo-provider-speak</artifactId>
 			<version>${dubbo.core.version}</version>
-		</dependency>
+		</dependency>	
+		
+		<dependency>
+			<groupId>com.hua</groupId>
+			<artifactId>dubbo-provider-walk</artifactId>
+			<version>${dubbo.core.version}</version>
+		</dependency>					
+		
 		
 	</dependencies>
 

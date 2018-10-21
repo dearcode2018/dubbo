@@ -26,8 +26,9 @@ public class WalkServiceImpl implements WalkService
 	 * @author qianye.zheng
 	 */
 	@Override
-	public ResultBean talk(String content)
+	public ResultBean walk(String content)
 	{
+		System.out.println("Invoking WalkServiceImpl.walk");
 		ResultBean resultBean = new ResultBean();
 		resultBean.setId("2019025658");
 		resultBean.setMessage("walk: " + content);
